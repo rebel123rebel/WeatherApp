@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.weatherapp.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeToAppLauncher"
+            app:destination="@id/appLauncherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appLauncherFragment"
+        android:name="com.example.weatherapp.Fragment.AppLauncherFragment"
+        android:label="fragment_app_launcher"
+        tools:layout="@layout/fragment_app_launcher" />
+</navigation>
